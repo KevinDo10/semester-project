@@ -1,0 +1,90 @@
+body, h1, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+    }
+    50% {
+        background: linear-gradient(135deg, #e0e0e0, #f4f4f4);
+    }
+    100% {
+        background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+    }
+}
+
+header {
+    background: linear-gradient(135deg, #333, #555);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid #444;
+}
+
+main {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 37.5rem;
+    margin: 2rem;
+    transition: transform 0.3s;
+}
+
+main:hover {
+    transform: scale(1.02);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 0.0625rem solid #ddd;
+    border-radius: 0.3125rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #333;
+    box-shadow: 0 0 0.3125rem rgba(51, 51, 51, 0.2);
+}
+
+button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #333, #555);
+    color: white;
+    border: none;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #777;
+    transform: scale(1.05);
+}

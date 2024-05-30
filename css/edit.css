@@ -1,0 +1,148 @@
+body, h1, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+header {
+    background: linear-gradient(135deg, #333, #555);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid #444;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+    }
+    50% {
+        background: linear-gradient(135deg, #e0e0e0, #f4f4f4);
+    }
+    100% {
+        background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+    }
+}
+
+main {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 37.5rem;
+    margin: 2rem;
+}
+
+/* Styles for the post list section */
+#post-list {
+    margin-bottom: 2rem;
+}
+
+#post-list button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #333, #555);
+    color: white;
+    border: none;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#post-list button:hover {
+    background-color: #777;
+    transform: scale(1.05);
+}
+
+#edit-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#edit-post h2 {
+    margin-bottom: 1rem;
+    color: #444;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#edit-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#edit-form input, #edit-form textarea {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 0.0625rem solid #ddd;
+    border-radius: 0.3125rem;
+    outline: none;
+    width: 100%;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#edit-form input:focus, #edit-form textarea:focus {
+    border-color: #333;
+    box-shadow: 0 0 0.3125rem rgba(51, 51, 51, 0.2);
+}
+
+#edit-form button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #333, #555);
+    color: white;
+    border: none;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-bottom: 1rem;
+}
+
+#edit-form button:hover {
+    background-color: #777;
+    transform: scale(1.05);
+}
+
+#edit-form button[type="submit"] {
+    background-color: #4CAF50;
+    background: linear-gradient(135deg, #4CAF50, #45A049);
+}
+
+#edit-form button[type="submit"]:hover {
+    background-color: #45A049;
+}
+
+#edit-form button[type="button"]:nth-of-type(1) {
+    background-color: #f44336;
+    background: linear-gradient(135deg, #f44336, #e31e1e);
+}
+
+#edit-form button[type="button"]:nth-of-type(1):hover {
+    background-color: #e31e1e;
+}
+
+#edit-form button[type="button"]:nth-of-type(2) {
+    background-color: #555;
+    background: linear-gradient(135deg, #555, #444);
+}
+
+#edit-form button[type="button"]:nth-of-type(2):hover {
+    background-color: #444;
+}

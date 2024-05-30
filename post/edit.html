@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Blog Posts</title>
+    <link rel="stylesheet" href="../css/edit.css">
+</head>
+<body>
+    <header>
+        <h1>Edit Blog Posts</h1>
+    </header>
+    <main>
+        <section id="post-list">
+            <button onclick="createNewPost()">Create New Post</button>
+        </section>
+        <section id="edit-post" style="display: none;">
+            <h2>Edit Post</h2>
+            <form id="edit-form">
+                <input type="text" id="title" placeholder="Title" required>
+                <textarea id="content" placeholder="Content" required></textarea>
+                <input type="text" id="image" placeholder="Image URL" required>
+                <button type="submit">Update Post</button>
+                <button type="button" onclick="deleteCurrentPost()">Delete Post</button>
+                <button type="button" onclick="cancelEdit()">Cancel</button>
+            </form>
+        </section>
+    </main>
+    <script src="../js/edit.js"></script>
+</body>
+</html>

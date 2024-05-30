@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Blog</title>
+    <link rel="stylesheet" href="../css/post.css">
+</head>
+<body>
+    <header>
+        <h1>Post Blog</h1>
+    </header>
+    <main>
+        <section id="create-post">
+            <form id="create-post-form">
+                <input type="text" id="title" placeholder="Title" required>
+                <textarea id="body" placeholder="Body" required></textarea>
+                <input type="text" id="tags" placeholder="Tags (comma separated)">
+                <input type="text" id="media-url" placeholder="Media URL">
+                <input type="text" id="media-alt" placeholder="Media Alt Text">
+                <button type="submit">Post</button>
+            </form>
+        </section>
+    </main>
+    <script src="../js/create.js"></script>
+</body>
+</html>
